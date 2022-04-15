@@ -1,0 +1,217 @@
+Body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background: #000;*/
+    
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container .column {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-right: 2px solid rgba(0,0,0,.5);
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.container .column:last-child {
+     border-right: none;
+}
+
+.container .column .content{
+    position: relative;
+    height: 100%;
+}
+
+.container .column .content h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(0,0,0,.1);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255,.2);
+    font-size: 15em;
+    border-top: 2px solid rgba(0,0,0,.5);
+    border-bottom: 2px solid rgba(0,0,0,.5);
+}
+
+.container .column.active .content .box {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.container .column .content .box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(100%);
+    box-sizing: border-box;
+    padding: 40px;
+    background: rgba(255,255,255,1);
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .column. .content .box h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #262626;
+}
+
+.container .column .content .box p {
+    color: #553e33;
+    font-size: 12px;
+}
+
+.container .column .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container .column.active .bg.bg2 {
+    background: url(images/jessica-felicio-576043-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70% 30%;
+    transition: 0.5s;  
+}
+
+.container .column.active .bg.bg4 {
+    background: url(images/taylor-simpson-1385356-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70% 60%;
+    transition: 0.5s;  
+}
+
+.container .column.active .bg.bg1 {
+    background: url(images/logo3.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70% 80%;
+    transition: 0.5s;  
+}
+
+.container .column.active .bg.bg3 {
+    background: url(images/hanan-hashi-277315-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    transition: 0.5s;  
+}
+
+
+
+
+.d-flex nav a {color: #553e33!important;
+}
+
+.d-flex nav {
+	font-family:'Roboto', sans-serif!important; 
+	font-size: 13px;
+	font-weight: 400;
+	color: #553e33!important;
+}
+
+.d-flex h5 {font-size: 40px ;
+	text-align: center;
+	padding: 7px 7px;
+	font-family:'Josefin Sans', sans-serif; 
+	font-weight: 300;
+	color: #553e33;
+}
+
+.d-flex h5 span {color: #FFFCBE;}
+
+.d-flex img {width: 5%;
+height: 5%;
+float: left;}
+
+
+
+
+
+
+ul {
+  position:absolute;
+  top:90%;
+  left:95%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:0;
+  
+}
+
+ul li {
+  list-style: none;
+	margin-bottom: 35px;
+}
+
+
+ul li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+ul li a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #553e33;
+  transition: .5s;
+}
+
+ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+ul li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+ul li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+ul li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}

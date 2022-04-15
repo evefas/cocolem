@@ -1,0 +1,147 @@
+html, body {padding: 0 0px;
+margin: 0;
+    width: 100%;
+position: relative;}
+
+body {font-family: 'Staatliches', cursive;}
+
+.container-fluid {padding: 0 0px;
+margin-top: 150px;
+width: 100%;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.blog-header {
+    width: 100%;
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+background-color: #fff;
+    padding-top: 0px;
+    margin: 0;
+    
+}
+
+
+.blog-header-logo {
+    font-family: 'Lobster', cursive;
+    padding: 4px 4px;
+ margin:2px 2px;
+  font-weight: 400;
+  font-size: 2.75rem;
+    float: right;
+    left: 3%;
+}
+
+
+
+.blog-header-logo:hover {
+}
+
+
+
+.menu .col-4 {float: right;
+align-content: center;}
+
+
+
+.logo {position: fixed;
+float: left;
+margin: 16px 36px;
+color: #fff;
+font-weight: 600;
+font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+
+
+nav {position: fixed;
+width: 100%;
+}
+
+nav ul {list-style: none;
+background: #fff;
+overflow: hidden;
+padding: 0;
+text-align: center;
+margin: 0;
+transition: 1s;
+}
+
+span {color: #FFE4A0;}
+nav.black ul {background: #000;
+}
+
+nav ul li {display: inline-block;
+padding: 30px;
+float: right}
+
+nav.black ul li {display: inline-block;
+padding: 30px;
+float: right}
+
+nav ul li a {text-decoration: none;
+color: #000!important;
+font-size: 18px;
+font-family: 'Staatliches', cursive;
+font-weight: 500;
+}
+
+nav.black ul li a {text-decoration: none;
+color: #fff!important;
+font-size: 18px;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    
+}
+
+@media(max-width: 580px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    
+    nav ul {max-height: 0px;
+    background: #000;
+    }
+    
+    nav.black ul {
+        background: #000;
+    }
+    
+    .showing {max-height: 20em;}
+    
+    nav ul li {box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;}
+    
+    .menu-icon {
+        display: black;
+    }
+}
+
+#section1 .row { margin-top: 100px;}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  background-color: #f5f5f5;
+}
+
+.footer p {font-size: 16px;
+letter-spacing: 3px;
+}
